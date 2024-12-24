@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="215.0" layoutY="139.0" prefHeight="37.0" prefWidth="187.0" promptText="username" styleClass="control" stylesheets="@css/style.css">
+         <font>
+            <Font name="Gigi" size="24.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="215.0" layoutY="200.0" prefHeight="37.0" prefWidth="187.0" promptText="password" styleClass="control" stylesheets="@css/style.css">
+         <font>
+            <Font name="Gigi" size="24.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="476.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #543A14;" text="Sign in" textFill="#c9a3a3">
+         <font>
+            <Font name="Freestyle Script" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="40.0" fitWidth="50.0" layoutX="137.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user%20(1).png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="40.0" fitWidth="50.0" layoutX="137.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/password1.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="78.0" fitWidth="122.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cat3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="164.0" layoutX="227.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cats.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="40.0" fitWidth="50.0" layoutX="137.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@images/address.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="215.0" layoutY="261.0" prefHeight="37.0" prefWidth="187.0" promptText="phone" styleClass="control" stylesheets="@css/style.css">
+         <font>
+            <Font name="Gigi" size="24.0" />
+         </font>
+      </TextField>
+      <ImageView blendMode="DARKEN" fitHeight="40.0" fitWidth="50.0" layoutX="137.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@images/phone.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="402.0" layoutY="461.0" mnemonicParsing="false" style="-fx-background-color: #543A14;" text="Sign up" textFill="#c39696">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Freestyle Script" size="29.0" />
+         </font>
+      </Button>
+      <TextField layoutX="215.0" layoutY="328.0" prefHeight="37.0" prefWidth="187.0" promptText="location" styleClass="control" stylesheets="@css/style.css">
+         <font>
+            <Font name="Gigi" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

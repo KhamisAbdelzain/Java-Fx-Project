@@ -21,7 +21,7 @@ public class JavaFXApplication1 extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/frontend/Rigister.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/frontend/Sign_up.fxml"));
         Scene scene = new Scene(root,600,600);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
