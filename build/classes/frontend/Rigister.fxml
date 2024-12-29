@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.LoginControler">
+<AnchorPane id="AnchorPane" fx:id="login" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.LoginControler">
    <children>
       <TextField layoutX="215.0" layoutY="139.0" prefHeight="37.0" prefWidth="187.0" promptText="username" styleClass="control" stylesheets="@css/style.css">
          <font>
@@ -30,7 +30,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="476.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #543A14;" text="Sign Up" textFill="#c9a3a3">
+      <Button layoutX="476.0" layoutY="43.0" mnemonicParsing="false" onAction="#signup" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #543A14;" text="Sign Up" textFill="#c9a3a3">
          <font>
             <Font name="Freestyle Script" size="20.0" />
          </font>

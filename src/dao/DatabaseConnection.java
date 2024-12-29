@@ -29,7 +29,7 @@ public class DatabaseConnection {
             connection.close();
         }
     
-    
+        return connection;
     }
     
     

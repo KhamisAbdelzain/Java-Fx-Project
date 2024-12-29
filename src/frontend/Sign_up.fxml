@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" fx:id="login" prefHeight="588.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.SignupControler">
    <children>
       <TextField layoutX="215.0" layoutY="139.0" prefHeight="37.0" prefWidth="187.0" promptText="username" styleClass="control" stylesheets="@css/style.css">
          <font>
@@ -22,7 +22,7 @@
             <Font name="Gigi" size="24.0" />
          </font>
       </PasswordField>
-      <Button layoutX="476.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #543A14;" text="Sign in" textFill="#c9a3a3">
+      <Button layoutX="476.0" layoutY="43.0" mnemonicParsing="false" onAction="#login" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #543A14;" text="Sign in" textFill="#c9a3a3">
          <font>
             <Font name="Freestyle Script" size="20.0" />
          </font>
@@ -77,7 +77,7 @@
             <Image url="@images/phone.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="402.0" layoutY="461.0" mnemonicParsing="false" style="-fx-background-color: #543A14;" text="Sign up" textFill="#c39696">
+      <Button layoutX="402.0" layoutY="461.0" mnemonicParsing="false" onAction="#signUP" style="-fx-background-color: #543A14;" text="Sign up" textFill="#c39696">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -90,5 +90,10 @@
             <Font name="Gigi" size="24.0" />
          </font>
       </TextField>
+      <ImageView fx:id="loading" fitHeight="75.0" fitWidth="98.0" layoutX="178.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/loading%20(1).gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
