@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0BB78;" styleClass="control" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.LoginControler">
    <children>
       <TextField layoutX="215.0" layoutY="139.0" prefHeight="37.0" prefWidth="187.0" promptText="username" styleClass="control" stylesheets="@css/style.css">
          <font>
@@ -22,7 +22,7 @@
             <Font name="Gigi" size="24.0" />
          </font>
       </PasswordField>
-      <Button layoutX="421.0" layoutY="304.0" mnemonicParsing="false" style="-fx-background-color: #543A14;" text="Sign in" textFill="#c39696">
+      <Button layoutX="421.0" layoutY="304.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: #543A14;" text="Sign in" textFill="#c39696">
          <font>
             <Font name="Freestyle Script" size="29.0" />
          </font>
@@ -65,5 +65,10 @@
          </image>
       </ImageView>
       <Button layoutX="63.0" layoutY="312.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="187.0" text="Forget Password" />
+      <ImageView fx:id="loading" fitHeight="54.0" fitWidth="50.0" layoutX="331.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/loading%20(1).gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
